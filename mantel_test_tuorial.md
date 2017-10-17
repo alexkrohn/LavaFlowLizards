@@ -9,7 +9,7 @@ Import Genetic Distance Matrix
 See the [IBE\_IBE\_plots\_tutorial](https://github.com/alexkrohn/LavaFlowLizards/blob/master/IBE_IBD_plots_tutorial.md) for more information on how to generate this matrix using ANGSD.
 
 ``` r
-geneticmatrix <- as.matrix(read.table("~/Documents/Berkeley/IBDIBE/reDone_analyses/genetics/sceloporus/redone_justPA_individuals/ngsdist/ngsdist_matrix_k70u5", 
+geneticmatrix <- as.matrix(read.table("ngsdist_matrix_k70u5", 
     skip = 2))
 
 geneticmatrix <- geneticmatrix[, 2:13]  #Remove the name column
@@ -19,7 +19,7 @@ Create Geographic Distance Matrix from Lat Longs
 ------------------------------------------------
 
 ``` r
-metadata <- read.table("~/Documents/Berkeley/IBDIBE/reDone_analyses/genetics/sceloporus/redone_justPA_individuals/ngsdist/justPAindividuals_metadata.txt", 
+metadata <- read.table("justPAindividuals_metadata.txt", 
     sep = "\t")  # Import the data
 metadata <- metadata[, c(1, 2, 4)]  # Keep only the relevant columns
 names(metadata) <- c("lat", "long", "Sample")
@@ -49,7 +49,7 @@ Import the ecological distance matrix
 Don't forget to check the dimensions of the matrices to make sure they're equal.
 
 ``` r
-eco <- as.matrix(read.table("~/Documents/Berkeley/IBDIBE/reDone_analyses/genetics/sceloporus/redone_justPA_individuals/ngsdist/ecodist_justpaindividuals.txt"))
+eco <- as.matrix(read.table("ecodist_justpaindividuals.txt"))
 
 dim(geodist)
 ```
