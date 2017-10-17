@@ -1,6 +1,6 @@
 # LavaFlowLizards
 
-This repository houses markdown files that will guide you through the analyses of my paper on genome-wide differentiation in lava flow lizards.
+This repository houses markdown files that will guide you through the analyses of my paper on genome-wide differentiation in lava flow lizards. The markdown files give instructions on how to do these analyses in R.
 
 For the dadi analyses, I've only included the script that allows you to convert the output of ANGSD (-doGeno 5) to the correct dadi input. From there, you can follow the excellent scripts of [Dan Portik](https://github.com/dportik/dadi_pipeline) to replicate my work.
 
