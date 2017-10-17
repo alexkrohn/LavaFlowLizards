@@ -150,7 +150,7 @@ legend(x = "topright", col = "black", pch = c(19, 1), legend = c("Same environme
     "Different environment"))
 ```
 
-![](IBE_IBD_plots_tutorial_files/figure-markdown_github/unnamed-chunk-11-1.png)
+![](data/unnamed-chunk-11-1.png)
 
 We can add the "IBD" line to this plot, but doing a simple linear regression of genetic distance and pairwise distance. Notice that this is not the most appropriate way to calculate IBD because the data may violate assumptions of linear regressions. In the paper we used Mantel tests to determine significant patterns of IBD.
 
@@ -165,7 +165,7 @@ legend(x = "topright", col = "black", pch = c(19, 1), legend = c("Same environme
 abline(linear.model, lwd = 2)
 ```
 
-![](IBE_IBD_plots_tutorial_files/figure-markdown_github/unnamed-chunk-12-1.png)
+![](data/unnamed-chunk-12-1.png)
 
 Changing this plot to color is as simple as modifying the eco matrix.
 
@@ -181,4 +181,4 @@ legend(x = "topright", col = c("dodgerblue3", "tomato"), pch = 19, legend = c("S
 abline(linear.model, lwd = 2)
 ```
 
-![](IBE_IBD_plots_tutorial_files/figure-markdown_github/unnamed-chunk-13-1.png)
+![](data/unnamed-chunk-13-1.png)
