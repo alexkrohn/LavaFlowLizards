@@ -7,7 +7,7 @@ import numpy as np
 
 # Point the the_file to your gunzipped -doGeno 5 file. You will have to add new columns for each of your individuals
 
-geno = pd.read_csv("/Users/AirAlex/Documents/Berkeley/IBDIBE/reDone_analyses/genetics/sceloporus/redone_justPA_individuals/dadi/dogeno5_mccw_mingeno5.geno",delimiter="\t",index_col=False,names=["locus","position","ref","derived","ind1","ind2","ind3","ind4","ind5","ind6","ind7"]) # *****
+geno = pd.read_csv("/dadi/dogeno5_mccw_mingeno5.geno",delimiter="\t",index_col=False,names=["locus","position","ref","derived","ind1","ind2","ind3","ind4","ind5","ind6","ind7"]) # *****
 
 # Create a blank data frame
 new_data = []
