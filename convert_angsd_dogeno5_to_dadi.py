@@ -36,7 +36,7 @@ print new_data[1]
 
 import csv
 
-the_file = open("/Users/AirAlex/Documents/Berkeley/IBDIBE/reDone_analyses/genetics/sceloporus/redone_justPA_individuals/dadi/cwmc_dadi_input.csv", "w") # Change the output file to be whatever/wherever you would like *****
+the_file = open("dadi/cwmc_dadi_input.csv", "w") # Change the output file to be whatever/wherever you would like *****
 writer = csv.writer(the_file, delimiter = "\t") # Create the guts of the file
 writer.writerows(new_data) # Put the data that you just made into the file
 the_file.close() # Close the file
